@@ -1,6 +1,13 @@
 #define SENSOR_TMP A0
 #define FALANTE 3
 
+// TIPOS DE SENSOR 
+#define DHT11 0
+#define TMP36 1 
+
+int sensorUtilizado = TMP36;
+
+
 void setup()
 {
   pinMode(FALANTE, OUTPUT);
@@ -25,10 +32,21 @@ void loop()
       
 int getTemperatura()
 {
- return convertToCelsius();
+ return convertToCelsius(sensorUtilizado);
 }
       
-int convertToCelsius()
+int convertToCelsius(int tipoSensor)
 {
-  return (-40 + 0.488155 * (analogRead(SENSOR_TMP) - 20));
+switch (tipoSensor)
+{
+case DHT11:
+  return map(analogRead(SENSOR_TMP),0,1023,0,500 );
+  break;
+case TMP36:
+return (-40 + 0.488155 * (analogRead(SENSOR_TMP) - 20));
+default:
+  return 0;
+  break;
+} 
 }
+ 
