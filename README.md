@@ -48,8 +48,7 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
   <img src="https://user-images.githubusercontent.com/22710963/76156407-dae71080-60d8-11ea-9cc2-4bc1377d2f05.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
-### Links úteis
-> [Manual do mundo](https://www.youtube.com/watch?v=vEdYjAbzrAE&list=PLYjrJH3e_wDPwKigz0AcIgzk9BF4lqDuy)
+### Links úteis 
 > [Adafruit DHT](https://github.com/adafruit/DHT-sensor-library)
 
 ###  Aplicações
