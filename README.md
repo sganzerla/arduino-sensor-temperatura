@@ -2,6 +2,12 @@
  
 Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor DHT11, DHT21 ou DHT22.
 
+### Monitorando temperatura e umidade (vídeo)
+<p>
+ <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/_-TVjxLDnvc" target="_blank">
+  <img src="https://user-images.githubusercontent.com/22710963/76163649-be71c500-6126-11ea-8d43-dd8c6c4ea475.png" alt="reset" style="max-width:100%;"></a>
+</p> 
+
 ### Software necessário
 
 - [IDE Arduino](https://www.arduino.cc/en/Main/Software)
