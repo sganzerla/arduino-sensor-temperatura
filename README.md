@@ -37,7 +37,12 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
   <img src="https://user-images.githubusercontent.com/22710963/73711525-e57f4600-46e5-11ea-8cb9-e9bb27543ea4.png" alt="reset" style="max-width:100%;"></a></p>     
   
   ### d) Sensor de temperatura e umidade DHT11
-   
+  Para usar outro tipo de sensor do tipo DHT basta definir o modelo aqui:
+  ```
+     #define DHTTYPE DHT11   // DHT 11
+   //#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+   //#define DHTTYPE DHT21   // DHT 21 (AM2301)
+ ```
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76156166-28617e80-60d5-11ea-901c-15f8f72e805d.png">
   <img src="https://user-images.githubusercontent.com/22710963/76156166-28617e80-60d5-11ea-901c-15f8f72e805d.png" alt="reset" style="max-width:100%;"></a></p> 
  
