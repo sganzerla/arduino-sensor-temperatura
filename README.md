@@ -41,6 +41,10 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76156166-28617e80-60d5-11ea-901c-15f8f72e805d.png">
   <img src="https://user-images.githubusercontent.com/22710963/76156166-28617e80-60d5-11ea-901c-15f8f72e805d.png" alt="reset" style="max-width:100%;"></a></p> 
  
+### Importando biblioteca AdaFruit DTH
+   
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76156693-bc831400-60dc-11ea-9fe8-2a4e9a9476f4.png">
+  <img src="https://user-images.githubusercontent.com/22710963/76156693-bc831400-60dc-11ea-9fe8-2a4e9a9476f4.png" alt="reset" style="max-width:100%;"></a></p> 
 
 ### Circuito
 <p>
