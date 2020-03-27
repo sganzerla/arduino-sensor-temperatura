@@ -21,7 +21,7 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 - b) 1 Sensor de temperatura e umidade DHT11
 - c) 1 Protoboard
 - d) 4-6 Cabos de conexão 
-- e) Display LCD 16X2 (opcional)
+- e) Display LCD 16X2 (opcional) + Potenciometro Linear 500k (opcional)
 - f) Motor 5v (opcional)
 ```
 
@@ -43,9 +43,14 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png">
   <img src="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png" alt="reset" style="max-width:100%;"></a></p>     
   
-  ### e) Display LCD 16X2
+  ### e) Display LCD 16X2 e Potenciometro Linear 500k
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png">
   <img src="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png" alt="reset" style="max-width:100%;"></a></p>     
+  
+  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77713295-c1890400-6fb4-11ea-87e0-9f36d23c9042.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77713295-c1890400-6fb4-11ea-87e0-9f36d23c9042.png" alt="reset" style="max-width:100%;"></a></p>     
+  
+  
   
   ### f) Motor 5v
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png">
