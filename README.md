@@ -11,8 +11,8 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 
  ### Circuito
 <p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76156407-dae71080-60d8-11ea-9cc2-4bc1377d2f05.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76156407-dae71080-60d8-11ea-9cc2-4bc1377d2f05.png" alt="reset" style="max-width:100%;"></a>
+ <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77713099-4889ac80-6fb4-11ea-9e10-d4328ffca172.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77713099-4889ac80-6fb4-11ea-9e10-d4328ffca172.png" alt="reset" style="max-width:100%;"></a>
 </p>  
    
 ## Hardware necessário
@@ -61,11 +61,6 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
    //#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
    //#define DHTTYPE DHT21   // DHT 21 (AM2301)
  ```
- 
-### Importando biblioteca AdaFruit DTH
-   
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/76156693-bc831400-60dc-11ea-9fe8-2a4e9a9476f4.png">
-  <img src="https://user-images.githubusercontent.com/22710963/76156693-bc831400-60dc-11ea-9fe8-2a4e9a9476f4.png" alt="reset" style="max-width:100%;"></a></p> 
 
 
 ### Links úteis
