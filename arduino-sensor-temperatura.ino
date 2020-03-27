@@ -17,13 +17,9 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 void setup()
 {
-
-  pinMode(MOTOR_PIN, OUTPUT);
+  setandoPinos();
+  
   Serial.begin(9600); // Inicializa serial com taxa de transmissão de 9600 bauds
-  lcd.begin(16, 2);   // Define o display com 16 colunas e 2 linhas
-  lcd.clear();        // limpa a tela do display
-
-  dht.begin(); // Inicializa  a leitura com o sensor de temperatura e umidade
 }
 
 void loop()
@@ -80,5 +76,14 @@ void loop()
     digitalWrite(MOTOR_PIN, t > 29.7 ? HIGH : LOW);
 
     timer = millis(); // Atualiza a referência
+  }
+
+  void setandoPinos()
+  {
+    pinMode(MOTOR_PIN, OUTPUT);
+    lcd.begin(16, 2); // Define o display com 16 colunas e 2 linhas
+    lcd.clear();      // limpa a tela do display
+
+    dht.begin(); // Inicializa  a leitura com o sensor de temperatura e umidade
   }
 }
