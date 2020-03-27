@@ -20,7 +20,7 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 - a) 1 Placa Arduino com cabo USB
 - b) 1 Sensor de temperatura e umidade DHT11
 - c) 1 Protoboard
-- d) 4-6 Cabos de conexão 
+- d) 4-6 Cabos de conexão ( com display são mais ou menos uns 20)
 - e) Display LCD 16X2 (opcional) + Potenciometro Linear 500k (opcional)
 - f) Motor 5v (opcional)
 ```
