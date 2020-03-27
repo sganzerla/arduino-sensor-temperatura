@@ -1,73 +1,84 @@
-// Example testing sketch for various DHT humidity/temperature sensors
-// Written by ladyada, public domain
-
-// REQUIRES the following Arduino libraries:
-// - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
-// - Adafruit Unified Sensor Lib: https://github.com/adafruit/Adafruit_Sensor
-
 #include "DHT.h"
+#include <LiquidCrystal.h> //Carrega a biblioteca LiquidCrystal nativa na IDE
 
-#define DHTPIN 2     // Digital pin connected to the DHT sensor
-// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
-// Pin 15 can work but DHT must be disconnected during program upload.
+#define MOTOR_PIN 13
+#define DHT_PIN 8
 
-// Uncomment whatever type you're using!
-#define DHTTYPE DHT11   // DHT 11
-//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
-//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+// descomentar se for utilizar outro modelo do sensor
+#define DHTTYPE DHT11 // DHT 11
+// #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+// #define DHTTYPE DHT21   // DHT 21 (AM2301
 
-// Connect pin 1 (on the left) of the sensor to +5V
-// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
-// to 3.3V instead of 5V!
-// Connect pin 2 of the sensor to whatever your DHTPIN is
-// Connect pin 4 (on the right) of the sensor to GROUND
-// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+DHT dht(DHT_PIN, DHTTYPE);
+uint32_t timer = 0;
 
-// Initialize DHT sensor.
-// Note that older versions of this library took an optional third parameter to
-// tweak the timings for faster processors.  This parameter is no longer needed
-// as the current DHT reading algorithm adjusts itself to work on faster procs.
-DHT dht(DHTPIN, DHTTYPE);
+//Define os pinos que serão utilizados para ligação ao display
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-void setup() {
-  Serial.begin(9600);
-  Serial.println(F("DHTxx test!"));
+void setup()
+{
 
-  dht.begin();
+  pinMode(MOTOR_PIN, OUTPUT);
+  Serial.begin(9600); // Inicializa serial com taxa de transmissão de 9600 bauds
+  lcd.begin(16, 2);   // Define o display com 16 colunas e 2 linhas
+  lcd.clear();        // limpa a tela do display
+
+  dht.begin(); // Inicializa  a leitura com o sensor de temperatura e umidade
 }
 
-void loop() {
-  // Wait a few seconds between measurements.
-  delay(2000);
+void loop()
+{
+  // Executa 1 vez a cada 2 segundos
+  if (millis() - timer >= 2000)
+  {
 
-  // Reading temperature or humidity takes about 250 milliseconds!
-  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
-  float h = dht.readHumidity();
-  // Read temperature as Celsius (the default)
-  float t = dht.readTemperature();
-  // Read temperature as Fahrenheit (isFahrenheit = true)
-  float f = dht.readTemperature(true);
+    // Reading temperature or humidity takes about 250 milliseconds!
+    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+    float h = dht.readHumidity();
+    // Read temperature as Celsius (the default)
+    float t = dht.readTemperature();
+    // Read temperature as Fahrenheit (isFahrenheit = true)
+    float f = dht.readTemperature(true);
 
-  // Check if any reads failed and exit early (to try again).
-  if (isnan(h) || isnan(t) || isnan(f)) {
-    Serial.println(F("Failed to read from DHT sensor!"));
-    return;
+    // Check if any reads failed and exit early (to try again).
+    if (isnan(h) || isnan(t) || isnan(f))
+    {
+      Serial.println(F("Failed to read from DHT sensor!"));
+      return;
+    }
+
+    // Compute heat index in Fahrenheit (the default)
+    float hif = dht.computeHeatIndex(f, h);
+    // Compute heat index in Celsius (isFahreheit = false)
+    float hic = dht.computeHeatIndex(t, h, false);
+
+    Serial.print(F("Humidity: "));
+    Serial.print(h);
+    Serial.print(F("%  Temperature: "));
+    Serial.print(t);
+    Serial.print(F("°C "));
+    Serial.print(f);
+    Serial.print(F("°F  Heat index: "));
+    Serial.print(hic);
+    Serial.print(F("°C "));
+    Serial.print(hif);
+    Serial.println(F("°F"));
+
+    // Exibe no display LCD o valor da humidade
+    lcd.setCursor(0, 0); // Define o cursor na posição de início
+    lcd.print("Humd. = ");
+    lcd.print(h);
+    lcd.print("%");
+
+    // Exibe no display LCD o valor da temperatura
+    lcd.setCursor(0, 1); // Define o cursor na posição de início
+    lcd.print("Temp. = ");
+    lcd.print(t);
+    lcd.write(B11011111); // Imprime o símbolo de grau
+    lcd.print("C");
+
+    digitalWrite(MOTOR_PIN, t > 29.7 ? HIGH : LOW);
+
+    timer = millis(); // Atualiza a referência
   }
-
-  // Compute heat index in Fahrenheit (the default)
-  float hif = dht.computeHeatIndex(f, h);
-  // Compute heat index in Celsius (isFahreheit = false)
-  float hic = dht.computeHeatIndex(t, h, false);
-
-  Serial.print(F("Humidity: "));
-  Serial.print(h);
-  Serial.print(F("%  Temperature: "));
-  Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(f);
-  Serial.print(F("°F  Heat index: "));
-  Serial.print(hic);
-  Serial.print(F("°C "));
-  Serial.print(hif);
-  Serial.println(F("°F"));
 }

@@ -1,11 +1,12 @@
+
 # arduino-sensor-temperatura
  
 Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor DHT11, DHT21 ou DHT22.
 
 ### Monitorando temperatura e umidade (vídeo)
 <p>
- <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/_-TVjxLDnvc" target="_blank">
-  <img src="https://user-images.githubusercontent.com/22710963/76163649-be71c500-6126-11ea-8d43-dd8c6c4ea475.png" alt="reset" style="max-width:100%;"></a>
+ <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/QIhPGDA-j7M" target="_blank">
+  <img src="https://user-images.githubusercontent.com/22710963/77712745-76222600-6fb3-11ea-8e81-2688be9c6730.png" alt="reset" style="max-width:100%;"></a>
 </p> 
 
  ### Circuito
@@ -20,6 +21,8 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 - b) 1 Sensor de temperatura e umidade DHT11
 - c) 1 Protoboard
 - d) 4-6 Cabos de conexão 
+- e) Display LCD 16X2 (opcional)
+- f) Motor 5v (opcional)
 ```
 
  ### a) Placa Arduino Uno 
@@ -40,7 +43,16 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png">
   <img src="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png" alt="reset" style="max-width:100%;"></a></p>     
   
+  ### e) Display LCD 16X2
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png" alt="reset" style="max-width:100%;"></a></p>     
   
+  ### f) Motor 5v
+<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png">
+  <img src="https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png" alt="reset" style="max-width:100%;"></a></p>     
+  
+
+
 ### Configuração
 
   Para usar outro tipo de sensor do tipo DHT basta definir o modelo descomentando a outra opção nas linhas abaixo:
@@ -69,11 +81,15 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 - [TinkerCad](https://www.tinkercad.com) - Ambiente Virtual p/ prototipagem
  
 - [Adafruit DHT](https://github.com/adafruit/DHT-sensor-library)
+
+- [Squids](http://www.squids.com.br/arduino/index.php/projetos-arduino/projetos-squids/basico/149-projeto-40-utilizando-um-sensor-de-temperatura-e-umidade-dht11-com-display-lcd)
  
 ###  Aplicações
  
  - Indicador de temperatura e umidade digital de ambientes
+ 
  - Ligar/desligar equipamentos automaticamente conforme temperatura pré-determinada (Ex: ar condicionado)
+ 
  - Ligar/desligar borrifador de água automaticamente quando umidade do ar for muito baixa
   
   
