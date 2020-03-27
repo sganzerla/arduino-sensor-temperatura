@@ -44,6 +44,9 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
   <img src="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png" alt="reset" style="max-width:100%;"></a></p>     
   
   ### e) Display LCD 16X2 e Potenciometro Linear 500k
+  
+  Atenção os pinos devem estar soldados no display senão não funciona.
+ 
 <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png">
   <img src="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png" alt="reset" style="max-width:100%;"></a></p>     
   
