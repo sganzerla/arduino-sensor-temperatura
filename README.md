@@ -1,21 +1,20 @@
 
 # arduino-sensor-temperatura
- 
+
+## Objetivo
+
 Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor DHT11, DHT21 ou DHT22.
 
-### Monitorando temperatura e umidade (vídeo)
-<p>
- <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/QIhPGDA-j7M" target="_blank">
-  <img src="https://user-images.githubusercontent.com/22710963/77712745-76222600-6fb3-11ea-8e81-2688be9c6730.png" alt="reset" style="max-width:100%;"></a>
-</p> 
+### Vídeo
 
- ### Circuito
-<p>
- <a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77713099-4889ac80-6fb4-11ea-9e10-d4328ffca172.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77713099-4889ac80-6fb4-11ea-9e10-d4328ffca172.png" alt="reset" style="max-width:100%;"></a>
-</p>  
-   
-## Hardware necessário
+[![Vídeo](https://user-images.githubusercontent.com/22710963/77712745-76222600-6fb3-11ea-8e81-2688be9c6730.png)](https://youtu.be/QIhPGDA-j7M)
+
+### Circuito
+
+![image](https://user-images.githubusercontent.com/22710963/77713099-4889ac80-6fb4-11ea-9e10-d4328ffca172.png)
+
+### Hardware necessário
+
 ```
 - a) 1 Placa Arduino com cabo USB
 - b) 1 Sensor de temperatura e umidade DHT11
@@ -25,41 +24,33 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
 - f) Motor 5v (opcional)
 ```
 
- ### a) Placa Arduino Uno 
- 
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77551422-16cbf500-6e91-11ea-850d-7e3989c9f1f2.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77551422-16cbf500-6e91-11ea-850d-7e3989c9f1f2.png" alt="reset" style="max-width:100%;"></a></p> 
+#### a) Placa Arduino Uno
 
-  ### b) Sensor de temperatura e umidade DHT11
-  
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77607222-65f94080-6ef8-11ea-8c7d-3c05160d8329.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77607222-65f94080-6ef8-11ea-8c7d-3c05160d8329.png" alt="reset" style="max-width:100%;"></a></p> 
- 
-  ### c) Protoboard 
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png" alt="reset" style="max-width:100%;"></a></p> 
+![image](https://user-images.githubusercontent.com/22710963/77551422-16cbf500-6e91-11ea-850d-7e3989c9f1f2.png)
 
-  ### d) Cabos de conexão
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png" alt="reset" style="max-width:100%;"></a></p>     
+#### b) Sensor de temperatura e umidade DHT11
   
-  ### e) Display LCD 16X2 e Potenciometro Linear 500k
-  
-  Atenção os pinos devem estar soldados no display senão não funciona.
- 
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png" alt="reset" style="max-width:100%;"></a></p>     
-  
-  <p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77713295-c1890400-6fb4-11ea-87e0-9f36d23c9042.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77713295-c1890400-6fb4-11ea-87e0-9f36d23c9042.png" alt="reset" style="max-width:100%;"></a></p>     
-  
-  
-  
-  ### f) Motor 5v
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png">
-  <img src="https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png" alt="reset" style="max-width:100%;"></a></p>     
-  
+![image](https://user-images.githubusercontent.com/22710963/77607222-65f94080-6ef8-11ea-8c7d-3c05160d8329.png)
 
+#### c) Protoboard
+
+![image](https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png)
+
+#### d) Cabos de conexão
+
+![image](https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png)
+
+#### e) Display LCD 16X2 e Potenciometro Linear 500k
+  
+Atenção os pinos devem estar soldados no display senão não funciona.
+
+![image](https://user-images.githubusercontent.com/22710963/77712613-0d3aae00-6fb3-11ea-892b-0d5e8753b394.png)
+
+![image](https://user-images.githubusercontent.com/22710963/77713295-c1890400-6fb4-11ea-87e0-9f36d23c9042.png)
+
+#### f) Motor 5v
+
+![image](https://user-images.githubusercontent.com/22710963/77712402-5fc79a80-6fb2-11ea-9dac-11af67f2e244.png)
 
 ### Configuração
 
@@ -70,31 +61,16 @@ Circuito simples que detecta temperatura e umidade de ambiente utilizando sensor
    //#define DHTTYPE DHT21   // DHT 21 (AM2301)
  ```
 
-
 ### Links úteis
 
-- [IDE Arduino](https://www.arduino.cc/en/Main/Software)
- 
-- [Documentação sintaxe C++](https://www.arduino.cc/reference/en/)
-
-- [Fritzing](https://fritzing.org/home/) - Licença comercial
-
-- [Fritzing](https://softfamous.com/fritzing/download/) - Versão gratuita (antiga mas permite que seja atualizada)
-
-- [TinkerCad](https://www.tinkercad.com) - Ambiente Virtual p/ prototipagem
- 
 - [Adafruit DHT](https://github.com/adafruit/DHT-sensor-library)
 
 - [Squids](http://www.squids.com.br/arduino/index.php/projetos-arduino/projetos-squids/basico/149-projeto-40-utilizando-um-sensor-de-temperatura-e-umidade-dht11-com-display-lcd)
- 
-###  Aplicações
- 
- - Indicador de temperatura e umidade digital de ambientes
- 
- - Ligar/desligar equipamentos automaticamente conforme temperatura pré-determinada (Ex: ar condicionado)
- 
- - Ligar/desligar borrifador de água automaticamente quando umidade do ar for muito baixa
-  
-  
- 
 
+### Aplicações
+
+- Indicador de temperatura e umidade digital de ambientes
+
+- Ligar/desligar equipamentos automaticamente conforme temperatura pré-determinada (Ex: ar condicionado)
+
+- Ligar/desligar borrifador de água automaticamente quando umidade do ar for muito baixa
